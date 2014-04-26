@@ -11,7 +11,13 @@ install brew-cask
 
 install zsh --disable-etcdir
 install git
+install packer
 install rbenv
+install the_silver_searcher
+install tig
+install tmux
+install whois
+install xz
 
 #cask install firefox
 #cask install gimp
