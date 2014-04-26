@@ -14,6 +14,7 @@ install zsh --disable-etcdir
 install git
 install packer
 install rbenv
+install ruby-build
 install the_silver_searcher
 install tig
 install tmux
