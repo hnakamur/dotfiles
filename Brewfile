@@ -23,7 +23,7 @@ install xz
 
 #cask install firefox
 #cask install gimp
-cask install google-chrome
+#cask install google-chrome
 cask install google-japanese-ime
 cask install grandperspective
 #cask install hipchat
