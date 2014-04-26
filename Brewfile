@@ -4,6 +4,7 @@ upgrade
 # Add Repository
 # tap homebrew/versions
 tap homebrew/binary
+tap homebrew/dupes
 
 # For cask
 tap phinze/homebrew-cask
