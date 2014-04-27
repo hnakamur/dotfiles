@@ -10,6 +10,7 @@ tap homebrew/dupes
 tap phinze/homebrew-cask
 install brew-cask
 
+install ctags
 install direnv
 install git
 install hub
@@ -20,6 +21,7 @@ install tig
 install tmux
 install whois
 install xz
+install wget
 install zsh --disable-etcdir
 
 #cask install firefox
