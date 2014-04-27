@@ -39,6 +39,7 @@ cask install iterm2
 cask install java
 cask install keepassx
 cask install kindle
+cask install mou
 cask install mysqlworkbench
 cask install skype
 cask install spark
