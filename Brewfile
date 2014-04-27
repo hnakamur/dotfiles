@@ -13,8 +13,6 @@ install brew-cask
 install direnv
 install git
 install packer
-install rbenv
-install ruby-build
 install the_silver_searcher
 install tig
 install tmux
