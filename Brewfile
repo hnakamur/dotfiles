@@ -10,7 +10,7 @@ tap homebrew/dupes
 tap phinze/homebrew-cask
 install brew-cask
 
-install zsh --disable-etcdir
+install direnv
 install git
 install packer
 install rbenv
@@ -20,6 +20,7 @@ install tig
 install tmux
 install whois
 install xz
+install zsh --disable-etcdir
 
 #cask install firefox
 #cask install gimp
