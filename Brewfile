@@ -15,6 +15,7 @@ install direnv
 install git
 install hub
 install packer
+install pwgen
 install reattach-to-user-namespace
 install the_silver_searcher
 install tig
