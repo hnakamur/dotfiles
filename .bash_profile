@@ -23,6 +23,7 @@ alias rmbak='find . -name "*~" | xargs rm'
 alias be='bundle exec'
 alias airport=/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport
 
+# copied from http://qiita.com/m-yamashita/items/9a9adf1e1d7219284049
 up() { local dir=''; for ((i=${1:-1};i;i--)); do dir=$dir../; done; cd $dir; }
 
 # Docker
