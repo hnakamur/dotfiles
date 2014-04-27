@@ -12,6 +12,7 @@ install brew-cask
 
 install direnv
 install git
+install hub
 install packer
 install reattach-to-user-namespace
 install the_silver_searcher
