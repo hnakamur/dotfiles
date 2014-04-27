@@ -19,5 +19,4 @@ brew bundle
 ./setup_anyenv.sh
 . ~/.bash_profile
 ./setup_rbenv.sh
-./setup_rubygems.sh
 ```
