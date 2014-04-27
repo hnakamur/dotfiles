@@ -1,0 +1,23 @@
+[user]
+	name = Hiroaki Nakamura
+	email = hnakamur@gmail.com
+[core]
+	excludesfile = /Users/hnakamur/.gitignore
+[merge]
+	ff = true
+[log]
+	date = local
+[push]
+	default = simple
+[alias]
+	co = checkout
+	st = status -s
+	ci = commit -v
+	di = diff -w
+	br = branch
+	fe = fetch --all --prune
+
+[pager]
+        log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+        show = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+        diff = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
