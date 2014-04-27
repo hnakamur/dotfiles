@@ -15,6 +15,7 @@ install direnv
 install git
 install jq
 install hub
+install mercurial
 install packer
 install pwgen
 install reattach-to-user-namespace
