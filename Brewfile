@@ -13,6 +13,7 @@ install brew-cask
 install ctags
 install direnv
 install git
+install jq
 install hub
 install packer
 install pwgen
