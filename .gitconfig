@@ -10,12 +10,14 @@
 [push]
 	default = simple
 [alias]
+	a = add
 	co = checkout
-	st = status -s
 	ci = commit -v
-	di = diff -w
-	br = branch
-	fe = fetch --all --prune
+	b = branch
+	d = diff -w
+	f = fetch --all --prune
+	l = log
+	s = status -s
 
 [pager]
         log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less

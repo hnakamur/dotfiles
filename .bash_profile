@@ -17,6 +17,7 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
 alias ll='ls -l'
+alias g=git
 alias vim='reattach-to-user-namespace /Applications/MacVim.app/Contents/MacOS/Vim'
 alias rmbak='find . -name "*~" | xargs rm'
 alias be='bundle exec'
