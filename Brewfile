@@ -25,15 +25,15 @@ install zsh --disable-etcdir
 #cask install firefox
 #cask install gimp
 #cask install google-chrome
-cask install google-japanese-ime
-cask install grandperspective
+#cask install google-japanese-ime
+#cask install grandperspective
 #cask install hipchat
 #cask install inkscape
-cask install iterm2
-cask install keepassx
+#cask install iterm2
+#cask install keepassx
 #cask install kindle
-cask install spark
-cask install vagrant
-cask install virtualbox
+#cask install spark
+#cask install vagrant
+#cask install virtualbox
 
 cleanup
