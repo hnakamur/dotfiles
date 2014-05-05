@@ -1,0 +1,3 @@
+bind generic C !git commit -v
+bind generic + !git commit --amend -v
+bind status P !git push origin
