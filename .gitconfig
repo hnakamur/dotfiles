@@ -15,8 +15,10 @@
 	ci = commit -v
 	b = branch
 	d = diff -w
+	di = diff
 	f = fetch --all --prune
 	l = log
+	me = merge
 	s = status -s
 
 [pager]
