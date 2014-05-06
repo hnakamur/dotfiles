@@ -46,9 +46,9 @@ cask install hipchat
 #cask install inkscape
 cask install iterm2
 cask install java
+cask install lightpaper
 cask install keepassx
 cask install kindle
-cask install mou
 cask install mysqlworkbench
 cask install skype
 cask install spark
