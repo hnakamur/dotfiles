@@ -12,6 +12,7 @@ install brew-cask
 
 # Use readline 6.2.4 instead of 6.3.3
 # https://github.com/sstephenson/ruby-build/issues/550#issuecomment-41198679
+unlink readline
 install https://raw.githubusercontent.com/Homebrew/homebrew/0181c8a1633353affefabe257c170edbd6d7c008/Library/Formula/readline.rb
 link --force readline
 
@@ -19,17 +20,21 @@ install openssl
 link --force openssl
 
 install boot2docker
+install cmake
 install ctags
 install direnv
 install docker
 install git
 install jq
 install hub
+install imagemagick
 install mercurial
 install mysql
 install packer
+install pkg-config
 install pwgen
 install reattach-to-user-namespace
+install subversion
 install the_silver_searcher
 install tig
 install tmux
