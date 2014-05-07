@@ -10,13 +10,22 @@ tap homebrew/dupes
 tap phinze/homebrew-cask
 install brew-cask
 
+# Use readline 6.2.4 instead of 6.3.3
+# https://github.com/sstephenson/ruby-build/issues/550#issuecomment-41198679
+install https://raw.githubusercontent.com/Homebrew/homebrew/0181c8a1633353affefabe257c170edbd6d7c008/Library/Formula/readline.rb
+link --force readline
+
+install openssl
+link --force openssl
+
+install boot2docker
 install ctags
 install direnv
+install docker
 install git
 install jq
 install hub
 install mercurial
-install openssl
 install packer
 install pwgen
 install reattach-to-user-namespace
@@ -27,14 +36,6 @@ install whois
 install xz
 install wget
 install zsh --disable-etcdir
-
-link --force openssl
-
-# Use readline 6.2.4 instead of 6.3.3
-# https://github.com/sstephenson/ruby-build/issues/550#issuecomment-41198679
-uninstall readline
-install https://raw.githubusercontent.com/Homebrew/homebrew/0181c8a1633353affefabe257c170edbd6d7c008/Library/Formula/readline.rb
-link --force readline
 
 cask install calibre
 cask install firefox
