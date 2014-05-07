@@ -26,6 +26,7 @@ install git
 install jq
 install hub
 install mercurial
+install mysql
 install packer
 install pwgen
 install reattach-to-user-namespace
