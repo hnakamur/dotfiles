@@ -34,6 +34,7 @@ install tig
 install tmux
 install whois
 install xz
+install vim
 install wget
 install zsh --disable-etcdir
 
