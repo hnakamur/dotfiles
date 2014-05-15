@@ -1,5 +1,8 @@
 set nocompatible
 
+set noswapfile
+set nobackup
+
 filetype off
 filetype plugin indent off
 set runtimepath+=/usr/local/go/misc/vim
