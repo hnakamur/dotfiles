@@ -34,6 +34,7 @@ install packer
 install pkg-config
 install pwgen
 install reattach-to-user-namespace
+install redis
 install subversion
 install the_silver_searcher
 install tig
