@@ -3,6 +3,9 @@
 defaults write com.apple.finder AppleShowAllFiles -boolean true
 #defaults delete com.apple.finder AppleShowAllFiles
 
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+#defaults delete com.apple.desktopservices DSDontWriteNetworkStores
+
 killall Finder
 
 
