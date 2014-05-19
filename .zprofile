@@ -82,3 +82,14 @@ eval "$(anyenv init -)"
 
 alias rmbak='find . -name "*~" | xargs rm'
 alias be='bundle exec'
+
+alias g='git'
+alias v='reattach-to-user-namespace /usr/local/bin/vim'
+alias vi='reattach-to-user-namespace /usr/local/bin/vim'
+alias vim='reattach-to-user-namespace /usr/local/bin/vim'
+
+export DOCKER_HOST=tcp://localhost:4243
+
+listenerprocess() {
+  lsof -n -sTCP:LISTEN -iTCP:$1
+}
