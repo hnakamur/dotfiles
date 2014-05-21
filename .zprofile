@@ -90,6 +90,8 @@ alias vi='reattach-to-user-namespace /usr/local/bin/vim'
 alias vim='reattach-to-user-namespace /usr/local/bin/vim'
 alias ap='ansible-playbook -i ~/.ansible/hosts'
 
+export ANSIBLE_HOSTS=~/.ansible/hosts
+
 export DOCKER_HOST=tcp://localhost:4243
 
 listenerprocess() {
