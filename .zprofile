@@ -97,3 +97,11 @@ export DOCKER_HOST=tcp://localhost:4243
 listenerprocess() {
   lsof -n -sTCP:LISTEN -iTCP:$1
 }
+
+# # config for MacTeX
+# # % brew cask install mactex
+# # ==> Caveats
+# # To use mactex, zsh users may need to add the following line to their
+# # ~/.zprofile.  (Among other effects, /usr/texbin will be added to the
+# # PATH environment variable):
+# eval `/usr/libexec/path_helper -s`

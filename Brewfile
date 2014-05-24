@@ -58,6 +58,7 @@ cask install java
 cask install lightpaper
 cask install keepassx
 cask install kindle
+cask install mactex
 cask install mysqlworkbench
 cask install skype
 cask install spark
