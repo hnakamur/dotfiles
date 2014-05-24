@@ -105,3 +105,7 @@ listenerprocess() {
 # # ~/.zprofile.  (Among other effects, /usr/texbin will be added to the
 # # PATH environment variable):
 # eval `/usr/libexec/path_helper -s`
+
+# Add PATH for MacTeX TexLive
+export PATH=$PATH:/usr/local/texlive/2013/bin/universal-darwin
+
