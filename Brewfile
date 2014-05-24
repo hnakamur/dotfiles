@@ -46,6 +46,7 @@ install wget
 install zsh --disable-etcdir
 
 cask install calibre
+cask install dash
 cask install firefox
 #cask install gimp
 cask install google-chrome
