@@ -10,11 +10,12 @@ tap homebrew/dupes
 tap phinze/homebrew-cask
 install brew-cask
 
-# Use readline 6.2.4 instead of 6.3.3
-# https://github.com/sstephenson/ruby-build/issues/550#issuecomment-41198679
-unlink readline
-install https://raw.githubusercontent.com/Homebrew/homebrew/0181c8a1633353affefabe257c170edbd6d7c008/Library/Formula/readline.rb
-link --force readline
+# # Use readline 6.2.4 instead of 6.3.3
+# # https://github.com/sstephenson/ruby-build/issues/550#issuecomment-41198679
+# unlink readline
+# install https://raw.githubusercontent.com/Homebrew/homebrew/0181c8a1633353affefabe257c170edbd6d7c008/Library/Formula/readline.rb
+# link --force readline
+install readline
 
 install openssl
 link --force openssl
