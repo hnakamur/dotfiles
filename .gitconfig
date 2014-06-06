@@ -20,6 +20,8 @@
 	l = log
 	me = merge
 	s = status -s
+	lga = log --graph --all --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
+	lg  = log --graph --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
 
 [pager]
         log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
