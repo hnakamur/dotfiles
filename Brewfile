@@ -60,7 +60,6 @@ cask install skype
 cask install spark
 cask install vagrant
 cask install virtualbox
-cask install webstorm
 cask install zeroxed
 
 cleanup
