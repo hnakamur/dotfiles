@@ -20,6 +20,7 @@ install readline
 install openssl
 link --force openssl
 
+install ansible
 install boot2docker
 install cmake
 install ctags
@@ -34,6 +35,7 @@ install mysql
 install packer
 install pkg-config
 install pwgen
+install python
 install reattach-to-user-namespace
 install redis
 install subversion
