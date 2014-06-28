@@ -98,14 +98,5 @@ listenerprocess() {
   lsof -n -sTCP:LISTEN -iTCP:$1
 }
 
-# # config for MacTeX
-# # % brew cask install mactex
-# # ==> Caveats
-# # To use mactex, zsh users may need to add the following line to their
-# # ~/.zprofile.  (Among other effects, /usr/texbin will be added to the
-# # PATH environment variable):
-# eval `/usr/libexec/path_helper -s`
-
-# Add PATH for MacTeX TexLive
-export PATH=$PATH:/usr/local/texlive/2013/bin/universal-darwin
-
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
