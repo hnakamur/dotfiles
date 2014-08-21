@@ -15,3 +15,7 @@ fi
 if [ -f ~/.zshrc-work ]; then
   source ~/.zshrc-work
 fi
+
+function agvim () {
+  vim $(ag $@ | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+}
