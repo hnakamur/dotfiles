@@ -2,7 +2,8 @@
 	name = Hiroaki Nakamura
 	email = hnakamur@gmail.com
 [core]
-	excludesfile = /Users/hnakamur/.gitignore
+	excludesfile = ~/.gitignore
+	editor = vim
 [merge]
 	ff = true
 [log]
@@ -23,8 +24,14 @@
 	lga = log --graph --all --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
 	lg  = log --graph --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
 	conflicts = diff --name-only --diff-filter=U
+	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -n 1 git branch -d
 
 [pager]
-        log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
-        show = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
-        diff = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less
+[credential]
+	helper = osxkeychain
+[ghq]
+	root = ~/ghq
+	root = ~/go/src
