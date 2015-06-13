@@ -6,6 +6,10 @@ export PS1="$ "
 export PATH=~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export EDITOR=vim
 
+# MacPorts
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export MANPATH=/opt/local/share/man:$MANPATH
+
 ulimit -S -n 10240
 
 # go
