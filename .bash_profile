@@ -13,19 +13,15 @@ export MANPATH=/opt/local/share/man:$MANPATH
 ulimit -S -n 10240
 
 # go
-export GOPATH=~/go
+export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
-alias ll='ls -l'
-alias g=git
-alias vim='reattach-to-user-namespace /Applications/MacVim.app/Contents/MacOS/Vim'
-alias rmbak='find . -name "*~" | xargs rm'
-alias be='bundle exec'
-alias airport=/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport
+# direnv
+eval "$(direnv hook bash)"
 
 # copied from http://qiita.com/m-yamashita/items/9a9adf1e1d7219284049 and modified
 up() { local dir=''; for ((i=${1:-1};i;i--)); do dir=$dir../; done; cd $dir; }
@@ -38,9 +34,6 @@ u() {
   fi
 }
 
-# Docker
-export DOCKER_HOST=tcp://localhost:4243
-alias dl='docker ps -l -q'
-
-# direnv
-eval "$(direnv hook bash)"
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
