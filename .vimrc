@@ -29,17 +29,20 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'glidenote/memolist.vim'
 Plugin 'fatih/vim-go'
-Plugin 'rust-lang/rust.vim'
-Plugin 'phildawes/racer', {
-        \   'build' : {
-        \     'mac'  : 'cargo build --release',
-        \     'unix' : 'cargo build --release',
-        \   },
-        \   'autoload' : {
-        \     'filetypes' : 'rust',
-        \   },
-        \ }
-Plugin 'rhysd/rust-doc.vim'
+
+Plugin 'tpope/vim-fugitive'
+
+"Plugin 'rust-lang/rust.vim'
+"Plugin 'phildawes/racer', {
+"        \   'build' : {
+"        \     'mac'  : 'cargo build --release',
+"        \     'unix' : 'cargo build --release',
+"        \   },
+"        \   'autoload' : {
+"        \     'filetypes' : 'rust',
+"        \   },
+"        \ }
+"Plugin 'rhysd/rust-doc.vim'
 
 call vundle#end()
 filetype plugin indent on
