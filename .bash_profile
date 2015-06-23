@@ -5,6 +5,7 @@ export PS1="$ "
 
 export PATH=~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export EDITOR=vim
+export LESS=-qRn
 
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
