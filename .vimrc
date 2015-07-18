@@ -28,21 +28,20 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'glidenote/memolist.vim'
+
 Plugin 'fatih/vim-go'
 
-Plugin 'tpope/vim-fugitive'
-
-"Plugin 'rust-lang/rust.vim'
-"Plugin 'phildawes/racer', {
-"        \   'build' : {
-"        \     'mac'  : 'cargo build --release',
-"        \     'unix' : 'cargo build --release',
-"        \   },
-"        \   'autoload' : {
-"        \     'filetypes' : 'rust',
-"        \   },
-"        \ }
-"Plugin 'rhysd/rust-doc.vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'phildawes/racer', {
+        \   'build' : {
+        \     'mac'  : 'cargo build --release',
+        \     'unix' : 'cargo build --release',
+        \   },
+        \   'autoload' : {
+        \     'filetypes' : 'rust',
+        \   },
+        \ }
+Plugin 'rhysd/rust-doc.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -59,6 +58,8 @@ au BufNewFile,BufRead *.go set sw=4 noexpandtab ts=4 completeopt=menu,preview
 " racer の設定
 let $RUST_SRC_PATH = expand('~/ghq/github.com/rust-lang/rust/src')
 
+command! Rustfmt :%!rustfmt %
+
 " :QuickRun でファイル保存時にシンタックスチェック
 let g:quickrun_config = get(g:, 'quickrun_config', {})
 let g:quickrun_config['syntax/rust'] = {
@@ -68,9 +69,6 @@ let g:quickrun_config['syntax/rust'] = {
             \   'outputter' : 'quickfix',
             \ }
 autocmd MyVimrc FileType BufWritePost *.rs QuickRun -type syntax/rust
-
-au BufRead,BufNewFile *.rs set filetype=rust
-au FileType rust setl sw=4 ts=4 et
 " }}}
 
 au FileType javascript setl sw=2 ts=2 et
