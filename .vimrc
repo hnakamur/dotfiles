@@ -9,7 +9,9 @@ set noundofile
 if &term =~ "xterm-256color" || "screen-256color"
     set t_Co=256
 endif
-colo elflord
+if !has('gui')
+    colo elflord
+endif
 
 " adjust width for full width characters
 set ambiwidth=double
