@@ -11,6 +11,7 @@ if &term =~ "xterm-256color" || "screen-256color"
 endif
 if !has('gui')
     colo elflord
+    hi Visual term=reverse cterm=reverse guibg=Grey
 endif
 
 " adjust width for full width characters
