@@ -92,7 +92,8 @@ if has('mac')
     " Disabled: Use tmux clipboard copy&paste feature instead of vim's.
     set clipboard=unnamed,autoselect
 
-    set grepprg=pt\ -e\ --nocolor
+    " set grepprg=pt\ -e\ --nocolor
+    set grepprg=hw
     autocmd QuickFixCmdPost *grep* cwindow
 
     " config for memolist
