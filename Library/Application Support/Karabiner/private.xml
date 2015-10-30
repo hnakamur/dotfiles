@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Firefox</name>
+    <url type="file">/Applications/Firefox.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Finder</name>
+    <url type="file">/System/Library/CoreServices/Finder.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Google_Chrome</name>
+    <url type="file">/Applications/Google Chrome.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_iTerm</name>
+    <url type="file">/Applications/iTerm.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_MacPass</name>
+    <url type="file">/Applications/MacPass.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_MacVim</name>
+    <url type="file">/Applications/MacVim.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Safari</name>
+    <url type="file">/Applications/Safari.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Slack</name>
+    <url type="file">/Applications/Slack.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Thunderbird</name>
+    <url type="file">/Applications/Thunderbird.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Safari</name>
+    <url type="shell">
+      <![CDATA[ ~/bin/switch_default_browser.sh safari ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Google_Chrome</name>
+    <url type="shell">
+      <![CDATA[ ~/bin/switch_default_browser.sh chrome ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Firefox</name>
+    <url type="shell">
+      <![CDATA[ ~/bin/switch_default_browser.sh firefox ]]>
+    </url>
+  </vkopenurldef>
+
+  <item>
+    <name>Map ⌘^e to activate Firefox</name>
+    <identifier>private.command_control_e</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_Firefox,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^r to activate Finder</name>
+    <identifier>private.command_control_r</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_Finder,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^c to activate Google Chrome</name>
+    <identifier>private.command_control_c</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::C, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_Google_Chrome,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^t to activate iTerm</name>
+    <identifier>private.command_control_t</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::T, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_iTerm,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^1 to activate MacPass</name>
+    <identifier>private.command_control_1</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::KEY_1, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_MacPass,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^v to activate MacVim</name>
+    <identifier>private.command_control_v</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::V, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_MacVim,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^s to activate Safari</name>
+    <identifier>private.command_control_s</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_Safari,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map right-⌘ + S to set default browser to Safari</name>
+    <identifier>private.right_command_s</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::S, ModifierFlag::COMMAND_R,
+      KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Safari,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map right-⌘ + C to default browser to Google Chrome</name>
+    <identifier>private.right_command_c</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::C, ModifierFlag::COMMAND_R,
+      KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Google_Chrome,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map right-⌘ + F to set default browser to Firefox</name>
+    <identifier>private.right_command_f</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F, ModifierFlag::COMMAND_R,
+      KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Firefox
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^2 to activate Slack</name>
+    <identifier>private.command_control_2</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::KEY_2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_Slack,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^b to activate Thunderbird</name>
+    <identifier>private.command_control_b</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::B, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_Thunderbird,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Escape to EISUU+Escape only terminal</name>
+    <identifier>remap.jis_escape2eisuuAndEscape_terminal</identifier>
+    <only>TERMINAL</only>
+    <autogen>--KeyOverlaidModifier-- KeyCode::ESCAPE, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
+  </item>
+
+<!--
+  <item>
+    <name>Map ESC to EISUU and ESC on terminal</name>
+    <identifier>private.esc_on_terminal</identifier>
+    <only>TERMINAL</only>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::ESCAPE,
+      KeyCode::JIS_EISUU, KeyCode::ESCAPE
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map EISUU to EISUU and ⌘</name>
+    <identifier>private.eisuu</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::JIS_EISUU,
+      KeyCode::JIS_EISUU,
+      KeyCode::COMMAND_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map left-⌘ to option</name>
+    <identifier>private.left_command</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMAND_L,
+      KeyCode::OPTION_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map left-⌥ to fn</name>
+    <identifier>private.left_option</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::OPTION_L,
+      KeyCode::FN
+    </autogen>
+  </item>
+-->
+</root>
