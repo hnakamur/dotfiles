@@ -62,6 +62,8 @@ if has('mac')
             \ }
     Plugin 'rhysd/rust-doc.vim'
 
+    Plugin 'editorconfig/editorconfig-vim'
+
     call vundle#end()
     " }}}
 
