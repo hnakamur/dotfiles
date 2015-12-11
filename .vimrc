@@ -103,6 +103,7 @@ if has('mac')
     map <Leader>mg  :MemoGrep<CR>
 endif
 
+au FileType c setl sw=2 ts=2 et
 au FileType javascript setl sw=2 ts=2 et
 au FileType html setl sw=2 ts=2 et
 au FileType markdown setl sw=2 ts=2 et
