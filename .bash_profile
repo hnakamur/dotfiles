@@ -1,7 +1,3 @@
-# ~/.bash_profile
-
-# use simple prompt
-export PS1="$ "
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 export EDITOR=vim
