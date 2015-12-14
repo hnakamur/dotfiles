@@ -16,6 +16,8 @@ eval "$(anyenv init -)"
 # direnv
 eval "$(direnv hook bash)"
 
+export PATH="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/bin:$PATH"
+
 if [ -f $HOME/.bashrc ]; then
   . $HOME/.bashrc
 fi
