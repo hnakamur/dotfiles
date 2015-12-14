@@ -18,6 +18,8 @@ eval "$(direnv hook bash)"
 
 export PATH="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/bin:$PATH"
 
+export RUBYGEMS_GEMDEPS=-
+
 if [ -f $HOME/.bashrc ]; then
   . $HOME/.bashrc
 fi
