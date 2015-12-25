@@ -9,8 +9,9 @@ alias airport=/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Cu
 alias d=docker
 alias dc=docker-compose
 alias dm=docker-machine
-alias dpsclean='docker rm $(docker ps -a -q)'
-alias dimgclean='docker rmi $(docker images -q -f dangling=true)'
 
 # docker-machine setup
 eval $(docker-machine env default)
+# https://github.com/macvim-dev/macvim/issues/109#issuecomment-157336164
+# You may need to run the following command when MacVim starts with no window
+# defaults write org.vim.MacVim MMLoginShell -bool NO
