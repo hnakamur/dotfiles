@@ -34,4 +34,4 @@
 	helper = osxkeychain
 [ghq]
 	root = ~/ghq
-	root = ~/go/src
+	root = ~/gocode
