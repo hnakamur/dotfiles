@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Firefox</name>
@@ -41,6 +41,16 @@
   </vkopenurldef>
 
   <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Thunderbird</name>
+    <url type="file">/Applications/Thunderbird.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Yabumi</name>
+    <url type="file">/Applications/Yabumi.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Safari</name>
     <url type="shell">
       <![CDATA[ ~/bin/switch_default_browser.sh safari ]]>
@@ -60,7 +70,6 @@
       <![CDATA[ ~/bin/switch_default_browser.sh firefox ]]>
     </url>
   </vkopenurldef>
-
 
   <item>
     <name>Map ⌘^e to activate Firefox</name>
@@ -133,32 +142,22 @@
   </item>
 
   <item>
-    <name>Map ⌘^2 to activate Slack</name>
-    <identifier>private.command_control_2</identifier>
-    <autogen>
-      __KeyToKey__
-      KeyCode::KEY_2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
-      KeyCode::VK_OPEN_URL_APP_Slack,
-    </autogen>
-  </item>
-
-  <item>
     <name>Map right-⌘ + S to set default browser to Safari</name>
     <identifier>private.right_command_s</identifier>
     <autogen>
       __KeyToKey__
       KeyCode::S, ModifierFlag::COMMAND_R,
-      KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Safari
+      KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Safari,
     </autogen>
   </item>
 
   <item>
-    <name>Map right-⌘ + C to set default browser to Google Chrome</name>
+    <name>Map right-⌘ + C to default browser to Google Chrome</name>
     <identifier>private.right_command_c</identifier>
     <autogen>
       __KeyToKey__
       KeyCode::C, ModifierFlag::COMMAND_R,
-      KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Google_Chrome
+      KeyCode::VK_OPEN_URL_SHELL_defaultbrowser_Google_Chrome,
     </autogen>
   </item>
 
@@ -172,4 +171,33 @@
     </autogen>
   </item>
 
+  <item>
+    <name>Map ⌘^2 to activate Slack</name>
+    <identifier>private.command_control_2</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::KEY_2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_Slack,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^b to activate Thunderbird</name>
+    <identifier>private.command_control_b</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::B, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_Thunderbird,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Map ⌘^y to activate Yabumi</name>
+    <identifier>private.command_control_y</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::Y, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_APP_Yabumi,
+    </autogen>
+  </item>
 </root>
