@@ -23,7 +23,8 @@ set textwidth=0
 au InsertEnter * set cul
 au InsertLeave * set nocul
 
-set fileencodings=utf-8,cp932,euc-jp,iso-2022-jp,default,latin
+set encoding=utf-8
+set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
 
 " configs which I use only on Mac, not on remote servers
 if has('mac')
