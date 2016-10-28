@@ -115,10 +115,10 @@ au FileType python setl sw=4 ts=4 et
 au FileType lua setl sw=4 ts=4 et
 
 " mappings for gnu global gtags
-map <C-g> :Gtags
-map <C-h> :Gtags -f %<CR>
-map <C-j> :GtagsCursor<CR>
-map <C-n> :cn<CR>
-map <C-p> :cp<CR>
+map <Leader>gg :Gtags
+map <Leader>gf :Gtags -f %<CR>
+map <Leader>gc :GtagsCursor<CR>
+map <Leader>gn :cn<CR>
+map <Leader>gp :cp<CR>
 
 filetype plugin indent on
