@@ -64,6 +64,11 @@ if has('mac')
 
     Plugin 'editorconfig/editorconfig-vim'
 
+    Plugin 'leafgarland/typescript-vim', {
+           \  'autoload' : {
+           \    'filetypes' : ['typescript'] }
+           \ }
+
     call vundle#end()
     " }}}
 
@@ -106,6 +111,7 @@ endif
 
 au FileType c setl sw=2 ts=2 et
 au FileType javascript setl sw=2 ts=2 et
+au FileType typescript setl sw=2 ts=2 et
 au FileType html setl sw=2 ts=2 et
 au FileType markdown setl sw=2 ts=2 et
 
