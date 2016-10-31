@@ -127,4 +127,8 @@ map <Leader>gc :GtagsCursor<CR>
 map <Leader>gn :cn<CR>
 map <Leader>gp :cp<CR>
 
+" Show trailing whitespace and spaces before a tab
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$\|\s\+\ze\t/
+
 filetype plugin indent on
