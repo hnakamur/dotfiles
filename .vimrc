@@ -129,6 +129,6 @@ map <Leader>gp :cp<CR>
 
 " Show trailing whitespace and spaces before a tab
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$\|\s\+\ze\t/
+match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 filetype plugin indent on
