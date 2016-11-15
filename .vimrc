@@ -69,6 +69,8 @@ if has('mac')
            \    'filetypes' : ['typescript'] }
            \ }
 
+    Plugin 'posva/vim-vue'
+
     call vundle#end()
     " }}}
 
