@@ -24,7 +24,7 @@ au InsertEnter * set cul
 au InsertLeave * set nocul
 
 set encoding=utf-8
-set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
+set fileencoding=utf-8,cp932
 
 " configs which I use only on Mac, not on remote servers
 if has('mac')
@@ -113,6 +113,7 @@ endif
 
 au FileType c setl sw=2 ts=2 et
 au FileType javascript setl sw=2 ts=2 et
+au FileType vue setl sw=2 ts=2 et
 au FileType typescript setl sw=2 ts=2 et
 au FileType html setl sw=2 ts=2 et
 au FileType markdown setl sw=2 ts=2 et
