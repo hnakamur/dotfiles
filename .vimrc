@@ -124,9 +124,9 @@ au FileType python setl sw=4 ts=4 et
 au FileType lua setl sw=4 ts=4 et
 
 " mappings for gnu global gtags
-map <Leader>gg :Gtags
-map <Leader>gf :Gtags -f %<CR>
-map <Leader>gc :GtagsCursor<CR>
+map <Leader>gg :Gtags<SPACE>
+map <Leader>gt :Gtags -f %<CR>
+map <Leader>gj :GtagsCursor<CR>
 map <Leader>gn :cn<CR>
 map <Leader>gp :cp<CR>
 
