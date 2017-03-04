@@ -1,0 +1,5 @@
+#!/bin/sh
+# This script is based on
+# http://blog.kazuhooku.com/2017/03/peco.html
+# exec ack "$@" . | peco --exec 'awk -F : '"'"'{print "+" $2 " " $1}'"'"' | xargs less '
+exec ack "$@" . | peco --exec 'awk -F : '"'"'{print "+" $2 " " $1}'"'"' | xargs vim --not-a-term '
