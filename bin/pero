@@ -1,14 +1,8 @@
 #!/bin/sh
 # NOTE: This script is based on
 # http://blog.kazuhooku.com/2017/03/peco.html
-# exec ack "$@" . | peco --exec 'awk -F : '"'"'{print "+" $2 " " $1}'"'"' | xargs less '
+#exec ack "$@" . | peco --exec 'awk -F : '"'"'{print "+" $2 " " $1}'"'"' | xargs less '
 #
-# NOTE: stderr2stdin can be installed like:
-# mkdir stderr2stdin_work
-# cd stderr2stdin_work
-# git clone https://github.com/fkuzume/etc
-# cd etc
-# cc -o ~/bin/stderr2stdin main.cpp
-# http://d.hatena.ne.jp/BugDig/20130504/1367689255
-# http://lamanotrama.hateblo.jp/entry/20080605/1212679464
-exec ack "$@" . | peco --exec 'awk -F : '"'"'{print "+" $2 " " $1}'"'"' | xargs stderr2stdin vim '
+# NOTE: See https://superuser.com/questions/336016/invoking-vi-through-find-xargs-breaks-my-terminal-why/427881#427881
+# for redirecting /dev/tty for vim
+exec ack "$@" . | peco --exec 'awk -F : '\''{print "+" $2 " " $1}'\'' | xargs -I line sh -c '\''exec </dev/tty vim -R line'\'
