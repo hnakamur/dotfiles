@@ -3,6 +3,9 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sb
 export EDITOR=vim
 export LESS=-qRn
 
+# Wrap lines in journalctl http://forums.fedoraforum.org/showthread.php?t=301153
+export SYSTEMD_LESS="FRXMK"
+
 ulimit -S -n 10240
 
 # go
