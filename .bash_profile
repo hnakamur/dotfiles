@@ -2,8 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 export EDITOR=vim
 
-# http://qiita.com/hatchinee/items/586fb1c4915e2bb5c03b
-export LESS=-qRnXF
+export LESS=-qRnX
 
 # Wrap lines in journalctl http://forums.fedoraforum.org/showthread.php?t=301153
 export SYSTEMD_LESS="FRXMK"
