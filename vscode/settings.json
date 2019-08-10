@@ -1,0 +1,9 @@
+{
+    "window.zoomLevel": 3,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen"
+    ]
+}
