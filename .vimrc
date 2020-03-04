@@ -4,18 +4,29 @@
 " vim +PlugInstall +q +q
 call plug#begin('~/.vim/plugged')
 Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
+" Plug 'prabirshrestha/asyncomplete.vim'
+" Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'mattn/vim-goimports'
 call plug#end()
 
-" NOTE: To install ag, run the command below.
-" Ubuntu: sudo apt-get install silversearcher-ag
-set grepprg=ag\ --vimgrep
-set grepformat=%f:%l:%c:%m
-"set grepprg=jvgrep\ -R\ -r\ --no-color
+"https://hail2u.net/blog/software/using-git-grep-with-vim.html
+set grepprg=git\ grep\ --no-index\ -I\ --line-number\ --no-color
+
+"if executable('jvgrep')
+"  set grepprg=jvgrep\ -R\ -r\ --no-color
+"elseif executable('rg')
+"  " NOTE: Download rg from https://github.com/BurntSushi/ripgrep/releases
+"  set grepprg=rg\ --vimgrep\ --no-heading
+"  set grepformat=%f:%l:%c:%m,%f:%l:%m
+"elseif executable('ag')
+"  " NOTE: To install ag, run the command below.
+"  " Ubuntu: sudo apt-get install silversearcher-ag
+"  set grepprg=ag\ --vimgrep
+"  set grepformat=%f:%l:%c:%m
+"endif
+
 autocmd QuickfixCmdPost make,grep copen
 
 map <C-n> :cnext<CR>
