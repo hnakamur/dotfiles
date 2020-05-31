@@ -31,7 +31,8 @@
 # 	show = diff-highlight | less
 # 	diff = diff-highlight | less
 [credential]
-	helper = osxkeychain
+	helper = cache 
+	#helper = osxkeychain
 [ghq]
 	root = ~/ghq
 [filter "lfs"]
