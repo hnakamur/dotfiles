@@ -15,8 +15,10 @@
 	co = checkout
 	ci = commit -v
 	b = branch
-	d = diff -w --color-words
-	di = diff --color-words
+	d = diff -w --color
+	#d = diff -w --color-words
+	di = diff --color
+	#di = diff --color-words
 	f = fetch --all --prune
 	l = log
 	me = merge
@@ -26,16 +28,30 @@
 	conflicts = diff --name-only --diff-filter=U
 	delete-merged-branches = !git branch --merged | grep -v -E '^(\\*|  (master|develop|release)$)' | xargs -n 1 git branch -d
 
+	change = codereview change
+	gofmt = codereview gofmt
+	mail = codereview mail
+	pending = codereview pending
+	submit = codereview submit
+	sync = codereview sync
+
 # [pager]
 # 	log = diff-highlight | less
 # 	show = diff-highlight | less
 # 	diff = diff-highlight | less
 [credential]
-	helper = cache 
-	#helper = osxkeychain
+	helper = cache --timeout=3600
 [ghq]
 	root = ~/ghq
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[http]
+	cookiefile = /home/hnakamur/.gitcookies
+#[url "https://hnakamur%40gmail.com@github.com/hnakamur/"]
+#	insteadOf = https://github.com/hnakamur/
+[url "git+ssh://hnakamur@git.launchpad.net/"]
+	insteadof = lp:
+[init]
+	defaultBranch = main
