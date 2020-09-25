@@ -4,7 +4,8 @@ alias g=git
 source /etc/bash_completion.d/git-prompt
 source /usr/share/bash-completion/completions/git
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
-         || complete -o default -o nospace -F _git g
+	|| complete -o default -o nospace -F _git g
 
-alias cdr='cd $(git rev-parse --show-toplevel)'
 alias gg='git grep -I --line-number --no-index'
+
+alias ghqget='ghq get --no-recursive'
