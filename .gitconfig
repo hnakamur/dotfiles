@@ -26,7 +26,7 @@
 	lga = log --graph --all --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
 	lg  = log --graph --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
 	conflicts = diff --name-only --diff-filter=U
-	delete-merged-branches = !git branch --merged | grep -v -E '^(\\*|  (master|develop|release)$)' | xargs -n 1 git branch -d
+	delete-merged-branches = !git branch --merged | grep -v -E '^(\\*|  (main|master|develop|staging|release)$)' | xargs -r -n 1 git branch -d
 
 	change = codereview change
 	gofmt = codereview gofmt
@@ -49,8 +49,8 @@
 	required = true
 [http]
 	cookiefile = /home/hnakamur/.gitcookies
-#[url "https://hnakamur%40gmail.com@github.com/hnakamur/"]
-#	insteadOf = https://github.com/hnakamur/
+[url "https://hnakamu@github.com/hnakamur/"]
+	insteadOf = https://github.com/hnakamur/
 [url "git+ssh://hnakamur@git.launchpad.net/"]
 	insteadof = lp:
 [init]
