@@ -21,12 +21,13 @@
 	#di = diff --color-words
 	f = fetch --all --prune
 	l = log
+	lf = log --pretty=fuller
 	me = merge
 	s = status -s --branch
 	lga = log --graph --all --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
 	lg  = log --graph --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
 	conflicts = diff --name-only --diff-filter=U
-	delete-merged-branches = !git branch --merged | grep -v -E '^(\\*|  (main|master|develop|staging|release)$)' | xargs -r -n 1 git branch -d
+	delete-merged-branches = !git branch --merged | grep -v -E '^(\\*|  (main|master|develop|release)$)' | xargs -r -n 1 git branch -d
 
 	change = codereview change
 	gofmt = codereview gofmt
@@ -34,7 +35,6 @@
 	pending = codereview pending
 	submit = codereview submit
 	sync = codereview sync
-
 # [pager]
 # 	log = diff-highlight | less
 # 	show = diff-highlight | less
@@ -49,9 +49,13 @@
 	required = true
 [http]
 	cookiefile = /home/hnakamur/.gitcookies
-[url "https://hnakamu@github.com/hnakamur/"]
+[url "https://hnakamur@github.com/hnakamur/"]
 	insteadOf = https://github.com/hnakamur/
 [url "git+ssh://hnakamur@git.launchpad.net/"]
 	insteadof = lp:
+[url "https://hnakamur@bitbucket.org/hnakamur/"]
+	insteadOf = https://bitbucket.org/hnakamur/
 [init]
 	defaultBranch = main
+[diff]
+	colorMoved = default
