@@ -43,3 +43,6 @@ au FileType yaml setl sw=2 ts=2 et
 au FileType python setl sw=4 ts=4 et
 au FileType lua setl sw=4 ts=4 et
 au FileType rust setl sw=4 ts=4 et
+
+" Use blighter color instead of default dark blue
+color desert
