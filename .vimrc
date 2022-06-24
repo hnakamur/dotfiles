@@ -3,12 +3,13 @@
 "   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 " vim +PlugInstall +q +q
 call plug#begin('~/.vim/plugged')
-Plug 'prabirshrestha/async.vim'
+" Plug 'prabirshrestha/async.vim'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
-Plug 'mattn/vim-goimports'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
+" Plug 'mattn/vim-goimports'
+Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 "https://hail2u.net/blog/software/using-git-grep-with-vim.html
@@ -46,3 +47,7 @@ au FileType rust setl sw=4 ts=4 et
 
 " Use blighter color instead of default dark blue
 color desert
+
+" Align GitHub-flavored Markdown tables
+" https://thoughtbot.com/blog/align-github-flavored-markdown-tables-in-vim
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
