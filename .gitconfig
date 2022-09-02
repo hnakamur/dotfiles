@@ -73,3 +73,5 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = /home/hnakamur/.config/git/allowed_signers
+[tag]
+	gpgsign = true
