@@ -1,7 +1,7 @@
 [user]
 	name = Hiroaki Nakamura
 	email = hnakamur@gmail.com
-	signingkey = F7ADBE58173B8F2E
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK5B65+uj4uMrJiMGiGImo3o2mIV4yHYUWZYc5ZkFnRr hnakamur@gmail.com
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
@@ -69,3 +69,5 @@
 	gpgsign = true
 [format]
 	pretty = fuller
+[gpg]
+	format = ssh
