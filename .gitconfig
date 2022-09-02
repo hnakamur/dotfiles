@@ -1,9 +1,12 @@
 [user]
 	name = Hiroaki Nakamura
 	email = hnakamur@gmail.com
+	signingkey = F7ADBE58173B8F2E
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
+	autocrlf = false
+	filemode = false
 [merge]
 	ff = true
 [log]
@@ -17,10 +20,11 @@
 	b = branch
 	d = diff -w --color
 	#d = diff -w --color-words
+	dc = diff -w --color-words=.
 	di = diff --color
 	#di = diff --color-words
 	f = fetch --all --prune
-	l = log
+	l = log --show-signature
 	lf = log --pretty=fuller
 	me = merge
 	s = status -s --branch
@@ -61,3 +65,7 @@
 	colorMoved = default
 [rebase]
 	autosquash = true
+[commit]
+	gpgsign = true
+[format]
+	pretty = fuller
