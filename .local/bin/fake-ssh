@@ -1,0 +1,4 @@
+#!/bin/sh
+ctn="${1}"
+shift
+exec incus exec "${ctn}" -- "$@"

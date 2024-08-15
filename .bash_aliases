@@ -8,6 +8,8 @@ alias gg='git grep -I --line-number --no-index'
 
 alias ghqget='ghq get --no-recursive'
 
+alias incusrsync='rsync -e fake-ssh'
+
 # https://www.debian.org/doc/manuals/maint-guide/modify.en.html#quiltrc
 alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
 . /usr/share/bash-completion/completions/quilt
