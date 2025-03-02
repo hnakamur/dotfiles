@@ -16,3 +16,6 @@ alias timemem='/usr/bin/time -f "\nreal:%es %E\tuser:%Us\tsys:%Ss\tmaxRss:%MkB"'
 alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
 . /usr/share/bash-completion/completions/quilt
 complete -F _quilt_completion -o filenames dquilt
+
+# https://zenn.dev/tantan_tanuki/articles/4bb0fb249a26dd
+alias zsysclean='zfs list -t snapshot | grep autozsys | awk '\''{print $1}'\'' | xargs -n1 sudo zfs destroy'
