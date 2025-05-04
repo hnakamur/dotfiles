@@ -30,6 +30,7 @@
 	s = status -s --branch
 	lga = log --graph --all --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
 	lg  = log --graph --abbrev-commit --pretty=format:'%x09 %Cred%h%Creset %Cgreen%ai %C(bold blue)(%an) -%C(yellow)%d%Creset %s%Creset'
+	tg = for-each-ref refs/tags --format='%(refname:short)%09%(*creatordate:iso)%09%(*committerdate:iso)' --sort=-*creatordate
 	conflicts = diff --name-only --diff-filter=U
 	delete-merged-branches = !git branch --merged | grep -v -E '^(\\*|  (main|master|develop|staging|release)$)' | xargs -r -n 1 git branch -d
 
