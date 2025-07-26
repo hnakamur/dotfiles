@@ -1,19 +1,21 @@
-" ~/.vim/vimrc
+" ~/.vimrc
 
-let s:jetpackfile = expand('<sfile>:p:h') .. '/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim'
-let s:jetpackurl = "https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim"
-if !filereadable(s:jetpackfile)
-  call system(printf('curl -fsSLo %s --create-dirs %s', s:jetpackfile, s:jetpackurl))
+" https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-packadd vim-jetpack
-call jetpack#begin()
-call jetpack#add('tani/vim-jetpack')
-call jetpack#add('junegunn/vim-easy-align')
-call jetpack#add('mattn/vim-lsp-settings')
-call jetpack#add('mattn/vim-goimports')
-call jetpack#add('tpope/vim-surround')
-call jetpack#end()
+call plug#begin()
+Plug 'tani/vim-jetpack'
+Plug 'junegunn/vim-easy-align'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-goimports'
+Plug 'tpope/vim-surround'
+Plug 'yukimura1227/vim-yazi'
+call plug#end()
 
 "https://hail2u.net/blog/software/using-git-grep-with-vim.html
 set grepprg=git\ grep\ --no-index\ -I\ --line-number\ --no-color
