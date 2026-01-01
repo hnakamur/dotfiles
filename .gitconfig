@@ -54,8 +54,8 @@
 	required = true
 [http]
 	cookiefile = /home/hnakamur/.gitcookies
-[url "https://hnakamur@github.com/hnakamur/"]
-	insteadOf = https://github.com/hnakamur/
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [url "git+ssh://hnakamur@git.launchpad.net/"]
 	insteadof = lp:
 [url "https://hnakamur@bitbucket.org/hnakamur/"]
