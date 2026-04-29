@@ -24,3 +24,8 @@ alias zsysclean='zfs list -t snapshot | grep autozsys | awk '\''{print $1}'\'' |
 
 # print current network namespace
 alias printns='ls -Li /var/run/netns/ | grep $(readlink /proc/self/ns/net | sed "s/^net:\[//;s/\]$//") | cut -d " " -f 2'
+
+# open directory with explorer or URL with browser on WSL bash
+if [ -f /mnt/c/Windows/System32/rundll32.exe ]; then
+  alias open='/mnt/c/Windows/System32/rundll32.exe url.dll,FileProtocolHandler'
+fi
