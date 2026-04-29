@@ -13,9 +13,11 @@ alias incusrsync='rsync -e fake-ssh'
 alias timemem='/usr/bin/time -f "\nreal:%es %E\tuser:%Us\tsys:%Ss\tmaxRss:%MkB"'
 
 # https://www.debian.org/doc/manuals/maint-guide/modify.en.html#quiltrc
-alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
-. /usr/share/bash-completion/completions/quilt
-complete -F _quilt_completion -o filenames dquilt
+if [ -f /usr/share/bash-completion/completions/quilt ]; then
+  alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
+  . /usr/share/bash-completion/completions/quilt
+  complete -F _quilt_completion -o filenames dquilt
+fi
 
 # https://zenn.dev/tantan_tanuki/articles/4bb0fb249a26dd
 alias zsysclean='zfs list -t snapshot | grep autozsys | awk '\''{print $1}'\'' | xargs -n1 sudo zfs destroy'
