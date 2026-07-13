@@ -19,11 +19,13 @@
 
 vim.pack.add {
   { src = "https://github.com/romus204/tree-sitter-manager.nvim" },
-  { src = 'https://github.com/neovim/nvim-lspconfig' }
+  { src = 'https://github.com/neovim/nvim-lspconfig' },
+  { src = 'https://github.com/nvim-mini/mini.files' },
 }
 
 require("tree-sitter-manager").setup()
 
+-- language-server
 vim.lsp.config("emmylua_ls", {
 	cmd = { "emmylua_ls" },
 	filetypes = { "lua" },
@@ -51,6 +53,7 @@ vim.lsp.enable("gopls")
 vim.lsp.enable("pyright")
 vim.lsp.enable("rust_analyzer")
 
+-- diagnotic quickfix
 vim.keymap.set("n", "<leader>q", function()
   for _, win in ipairs(vim.fn.getwininfo()) do
     if win.quickfix == 1 then
@@ -62,3 +65,12 @@ vim.keymap.set("n", "<leader>q", function()
   vim.diagnostic.setqflist()
   vim.cmd.copen()
 end, { desc = "Toggle diagnostic quickfix" })
+
+-- file browser
+-- キーマップの表示は以下のコマンドで確認できる。
+-- :lua =require("mini.files").config.mappings
+require('mini.files').setup()
+
+vim.keymap.set("n", "<leader>e", function()
+  MiniFiles.open(vim.api.nvim_buf_get_name(0), true)
+end, { desc = "Open mini.files at current file" })

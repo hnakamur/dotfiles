@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "mini.files": {
+      "rev": "0765a2502d3577b2b00d21f8f607f9bd7c8d89fc",
+      "src": "https://github.com/nvim-mini/mini.files"
+    },
     "nvim-lspconfig": {
       "rev": "5955a100ae7155962330643924e21a798b9bdc91",
       "src": "https://github.com/neovim/nvim-lspconfig"
