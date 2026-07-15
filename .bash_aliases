@@ -32,3 +32,9 @@ fi
 
 # add user with specified password
 alias addbuilduser='useradd -m -k /etc/skel -p "$(openssl passwd -6 mypassword)" -s /bin/bash build'
+
+# create or update a symbolic link to ssh agent socket
+alias linksshsock='ln -snf "$SSH_AUTH_SOCK" ~/.ssh/agent.sock'
+
+# update ssh-agent socket environment variable to the symbolic link created with linksshsocket alias
+alias updatesshsock='export SSH_AUTH_SOCK=$HOME/.ssh/agent.sock'
