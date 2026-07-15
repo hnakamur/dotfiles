@@ -29,3 +29,6 @@ alias printns='ls -Li /var/run/netns/ | grep $(readlink /proc/self/ns/net | sed 
 if [ -f /mnt/c/Windows/System32/rundll32.exe ]; then
   alias open='/mnt/c/Windows/System32/rundll32.exe url.dll,FileProtocolHandler'
 fi
+
+# add user with specified password
+alias addbuilduser='useradd -m -k /etc/skel -p "$(openssl passwd -6 mypassword)" -s /bin/bash build'
