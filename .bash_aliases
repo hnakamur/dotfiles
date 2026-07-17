@@ -38,3 +38,5 @@ alias linksshsock='ln -snf "$SSH_AUTH_SOCK" ~/.ssh/agent.sock'
 
 # update ssh-agent socket environment variable to the symbolic link created with linksshsocket alias
 alias updatesshsock='export SSH_AUTH_SOCK=$HOME/.ssh/agent.sock'
+
+alias purgepkg="dpkg -l | grep ^.c | awk '{print \$2}' | xargs sudo apt purge -y"
